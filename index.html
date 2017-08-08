@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<title>Happy Birthday</title>
+	<title>Can you marry me?</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<style type="text/css">
 		@font-face {
@@ -11,8 +11,8 @@
 	</style>
 	<link href="css/default.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/garden_dev.js"></script>
-    <script type="text/javascript" src="js/functions_dev.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
 </head>
 
 <body>
@@ -20,53 +20,33 @@
 		<div id="content">
 			<div id="code">
 				<span class="comments">/**</span><br />
-				<span class="space"/><span class="comments">* The 6th day of September, is your birthday.</span><br />
-				<span class="space"/><span class="comments">* So I created a page to celebrate this extraordinary day.</span><br />
+				<span class="space"/><span class="comments">* I ...</span><br />
+				<span class="space"/><span class="comments">* So I created this page to ...</span><br />
 				<span class="space"/><span class="comments">*/</span><br />
+				Boy i = <span class="keyword">new</span> Boy(<span class="string">"Max Witten"</span>);<br />
 				Girl u = <span class="keyword">new</span> Girl(<span class="string">"Purple Shan"</span>);<br />
+				
 				<br />
-				<span class="comments">// September 6th, when the bell rang, your age increased.</span><br />
-				Date currentTime = <span class="keyword">new</span> Date(); <br />
+				<span class="comments">// I ...</span><br />
+				i.liveHappilyWith(u);<br />
+				
 				<br />
-				SimpleDateFormat formatter = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"yyyy-MM-dd"</span>);<br />
-				String dateString = formatter.format(currentTime);<br />
+				<span class="comments">// And, I ..., I ...</span><br />
+				i.love(u);<br />
+				
 				<br />
-				if(dateString.equals(<span class="string">"2017-09-06"</span>)) {</br>
-				&nbsp;&nbsp;u.age++;</br>
-				}</br>
-				<br />
-				<span class="comments">// My blessing will be with you simultaneously.</span><br />
-				<span class="keyword">new</span> Thread () {<br />
-				&nbsp;&nbsp;@Override </br>
-				&nbsp;&nbsp;public void run() {
-				<span class="comments">// Forever and ever. I wish</span><br />
-				&nbsp;&nbsp;&nbsp;&nbsp;while(true) {</br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comments">// luckiness,</span><br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;u.fortune++;</br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comments">// happiness,</span><br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;u.happiness++;</br>
-				&nbsp;&nbsp;&nbsp;&nbsp;}</br>
-				&nbsp;&nbsp;}
-			    <span class="comments">// and everything you wish can be achieved.</span><br />
-				}.start();</br>
-				<br />
-				<span class="comments">// The last thing I wanna say, is:</span><br />
-				System.out.println(<span class="string">"Happy Birthday to U~"</span>);
+				<img src="media/3.jpg" /><br />
+				<!-- http://www.bqshuo.com/articles/7152.html -->
 			</div>
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
 				<div id="words">
 					<div id="messages">
-					</br>
-					</br>
-					</br>
-					</br>
-						You've been in the world for
+						<!-- Purple Shan, I have fallen in love with you for -->
 						<div id="elapseClock"></div>
 					</div>
 					<div id="loveu">
-						May you have a year full of happiness.<br/>
-						<div class="signature">- Max Witten</div>
+						<div class="signature">-- Max Witten</div>
 					</div>
 				</div>
 			</div>
@@ -74,9 +54,8 @@
 		<div id="copyright">
 			Copyright © 2017 Max Witten
 		</div>
-		<!--<embed src="media/california-crossing.mp3" width="0" height="0" />-->
 		<audio autoplay>
-			<source src="media/california-crossing.mp3" type="audio/mpeg">
+			<source src="media/the-truth-that-you-leave.mp3" type="audio/mpeg">
 			Your browser does not support the audio element.
 		</audio>
 	</div>
@@ -84,8 +63,8 @@
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
 		var together = new Date();
-		together.setFullYear(1996, 8, 6);
-		together.setHours(8);
+		together.setFullYear(2012, 8, 10);
+		together.setHours(20);
 		together.setMinutes(0);
 		together.setSeconds(0);
 		together.setMilliseconds(0);
